@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center main-container loggedOut">
+        <div class="col-md-6">
+          <button type="button" name="button" class="btn btn-primary btn-login">Login</button>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+      <div class="row justify-content-center main-container loggedIn">
+        <div class="col-md-6">
+          <button type="button" name="button" class="btn btn-secondary btn-logout">Logout</button>
+          <span class="name-info text-muted mx-4"></span>
+        </div>
+        <div class="col-md-4">
+          <input id='room-id' type='text' class="form-control"></input>
+          <button class="buy-quarters-button" data-widget-type="button" data-order-code="1" data-amount="10">
+            Join
+          </button>
+          <div id='messages' class='my-3'>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <script src="/javascripts/lib/quarters.min.js" charset="utf-8"></script>
+  <script src="https://dev.pocketfulofquarters.com/embeds/button.js"
+    data-script-name="quarters-embeds"
+    data-app-id="Lpk5sPrA7P59HFlN7obS"
+    data-app-key="1s4x2v8h3b9ollw1pt2afj8knheamvmvv"
+    charset="utf-8"></script>
+  <script src="/javascripts/index.js" charset="utf-8"></script>
+</html>
