@@ -1,5 +1,5 @@
-var socket = io('https://flip-a-coin.now.sh')
-// var socket = io('http://localhost:3000')
+// var socket = io('https://flip-a-coin.now.sh')
+var socket = io('http://localhost:3000')
 socket.on('connect', function() {
   addMessage('connected')
 })
