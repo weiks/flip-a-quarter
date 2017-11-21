@@ -14,8 +14,8 @@ socket.on('disconnect', function() {
 })
 
 var quarterOptions = {
-  appKey: 'Lpk5sPrA7P59HFlN7obS',
-  appSecret: '1s4x2v8h3b9ollw1pt2afj8knheamvmvv',
+  appKey: '4ELvnPuxeEWZYw3Fgins',
+  appSecret: '3luv5t2fkyh5oyfjalhp8u814pyua4dck',
   // quartersURL: 'http://localhost:3000',
   // apiURL: 'http://localhost:8888/v1/'
   quartersURL: 'https://dev.pocketfulofquarters.com',

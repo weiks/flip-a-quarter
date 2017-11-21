@@ -36,7 +36,7 @@ const transferToWinner = roomId => {
   // transfer quarters to winner
   return quarters.transferQuarters({
     user: winner,
-    amount: 16
+    amount: 1850
   })
 }
 

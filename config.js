@@ -1,14 +1,14 @@
 module.exports = exports = {
   quarters: {
-    key: process.env.QUARTERS_KEY || 'Lpk5sPrA7P59HFlN7obS',
+    key: process.env.QUARTERS_KEY || '4ELvnPuxeEWZYw3Fgins',
     secret:
       process.env.QUARTERS_SECRET ||
-      'uwwh5snunvk5mmhgtyar3fpohtf2u4trhwynjmr3ol5r6hhujopdf8',
+      'jkejdyxrttcg2y3ok4kqcivc3g5daamguct0ve5pdre6xaur05jium',
     webSecret:
-      process.env.QUARTERS_WEBSECRET || '1s4x2v8h3b9ollw1pt2afj8knheamvmvv',
+      process.env.QUARTERS_WEBSECRET || '3luv5t2fkyh5oyfjalhp8u814pyua4dck',
     address:
       process.env.QUARTERS_ADDRESS ||
-      '0xcd7e451d500ddb6b22d2648f4e66fb4bf8999629',
+      '0x347b0bfc4a86b1402c9dd92fea727235e92888c0',
     quartersURL:
       process.env.QUARTERS_URL || 'https://dev.pocketfulofquarters.com',
     apiURL:
