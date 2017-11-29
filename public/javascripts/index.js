@@ -57,29 +57,27 @@ function checkLocalToken() {
 }
 
 function login() {
-  quarters.authorize({
-    success: function(data) {
-      if (data.code) {
-        // fetch refresh token using code
-        $.ajax({
-          url: '/code',
-          method: 'POST',
-          data: JSON.stringify({code: data.code}),
-          contentType: 'application/json',
-          dataType: 'json'
+  quarters.authorize('iframe', function(data) {
+    if (data.code) {
+      // fetch refresh token using code
+      $.ajax({
+        url: '/code',
+        method: 'POST',
+        data: JSON.stringify({code: data.code}),
+        contentType: 'application/json',
+        dataType: 'json'
+      })
+        .then(res => {
+          // set refresh token
+          window.localStorage.setItem(
+            'quarters_sdk:refresh_token',
+            res.refresh_token
+          )
+          checkLocalToken()
         })
-          .then(res => {
-            // set refresh token
-            window.localStorage.setItem(
-              'quarters_sdk:refresh_token',
-              res.refresh_token
-            )
-            checkLocalToken()
-          })
-          .catch(e => {
-            console.log(e)
-          })
-      }
+        .catch(e => {
+          console.log(e)
+        })
     }
   })
 }
